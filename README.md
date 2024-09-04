@@ -29,7 +29,7 @@ Content-Length: 59
 ```json
 {
 "email": "test@example.com",
-"password": "1234"
+"password": "password"
 }
 ```
 
