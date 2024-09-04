@@ -26,24 +26,32 @@ Accept: application/json
 Content-Type: application/json
 
 Content-Length: 59
-
+```json
 {
 "email": "test@example.com",
 "password": "1234"
 }
+```
+
 In response will get:
+
+```json
 {
     "data": {
         "token": "2|4eHYPAV2u7LROAkoVEoCxsyUXEGOlwienL2GcAxM831a5ab0"
     }
 }
+```
 
 Use token in next requests as Bearer token 
 
 For not authenticated users returns status 401 with message:
+
+```json
 {
 "message": "The provided credentials do not match our records."
 }
+```
 
 ### Domain
 For store domain you send endpoint:
@@ -68,12 +76,14 @@ Content-Type: application/json
 ----WebKitFormBoundary7MA4YWxkTrZu0gW
 
 In response will get:
+```json
 {
     "data": {
         "issuer": "Accredify",
         "result": "verified"
     }
 }
+```
 
 Example of .json file with correct data:
 
