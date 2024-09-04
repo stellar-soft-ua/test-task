@@ -16,10 +16,15 @@
 You can see OpenApi project documentation by link: http://127.0.0.1:8000/api/documentation 
 ### Authentication
 For Authentication you should send endpoint:
+
 POST /api/login HTTP/1.1
+
 Host: 127.0.0.1:8000
+
 Accept: application/json
+
 Content-Type: application/json
+
 Content-Length: 59
 
 {
@@ -42,11 +47,17 @@ For not authenticated users returns status 401 with message:
 
 ### Domain
 For store domain you send endpoint:
+
 POST /api/domain/store HTTP/1.1
+
 Host: 127.0.0.1:8000
+
 Accept: application/json
+
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
 Authorization: Bearer 2|4eHYPAV2u7LROAkoVEoCxsyUXEGOlwienL2GcAxM831a5ab0
+
 Content-Length: 181
 
 ----WebKitFormBoundary7MA4YWxkTrZu0gW
@@ -66,7 +77,7 @@ In response will get:
 
 Example of .json file with correct data:
 
------------------------------------------------------------------------------------------
+```json
 
 {
 "data": {
@@ -91,7 +102,7 @@ Example of .json file with correct data:
 "targetHash": "ad92d4a217c414d6c16ee538934b099ae7b03baa2b60914929961e1906a08767"
 }
 }
----------------------------------------------------------------------------------------------
+```
 
 ## Tests
 To run unit and feature tests execute:
